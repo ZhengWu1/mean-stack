@@ -1,0 +1,36 @@
+/*
+CSS for the CS142 project #5 main page
+
+Since CSS uses a global name space for classes we should use class names starting with
+cs142-main- here.
+*/
+a {
+	text-decoration: none;
+}
+
+md-checkbox {
+	margin-bottom: 0;
+}
+
+.toolbar {
+	margin-right: 10px;
+	margin-left: 10px;
+
+}
+
+.photos-card {
+	width: 600px;
+}
+
+.photos {
+	color: green;
+	margin-right: 40px;
+}
+
+.comments {
+	color: red;
+}
+
+#add-photo {
+	margin-left: -20px;
+}

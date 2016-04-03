@@ -1,0 +1,30 @@
+table {
+	font-size: 13px;
+	font-family: Tahoma;
+	width: 450px;
+	height: 50px;
+	margin: 22px 20px 22px 12px;
+	border: 10px #d0d0ff solid;
+	padding: 20px;
+}
+
+th {
+	text-align: left;
+}
+
+th, td {
+	padding: 2px 10px 2px 0;
+	white-space: nowrap;
+}
+
+.center {
+	text-align: center;
+}
+
+.total td{
+	border-top: 2px black solid;
+	padding: 5px 10px 2px 0;
+	font-weight: bold;
+}
+
+

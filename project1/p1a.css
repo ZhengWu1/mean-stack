@@ -1,0 +1,35 @@
+table {
+	font-size: 13px;
+	font-family: Tahoma;
+	margin: 8px 1px;
+	height: 126px;
+	width: 600px;
+}
+
+th {
+	background-color: #687291;
+	color: white;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #dfe1e7;
+}
+
+tr:nth-child(odd) {
+	background-color: #eeeff2;
+}
+
+th, td {
+	border-top: 1px white solid;
+	padding: 0px 10px;
+}
+
+.center {
+	text-align: center;
+}
+
+.total {
+	display: none;
+}
+

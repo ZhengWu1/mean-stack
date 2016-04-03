@@ -1,0 +1,30 @@
+<md-list layout="column">
+	<md-list-item class="inset" layout="column">
+		<md-card class="photos-card">
+			<img class="md-card-image" ng-src="{{computePhotoSrc(photo.file_name)}}"> </img>
+			<md-card-content>
+				<div>
+					<md-button class="md-raised" ng-href="#/photos/{{main.userId}}/{{photoIndex - 1}}" ng-disabled="photoIndex <= 0"> Previous Photo </md-button>
+					<md-button class="md-raised" ng-href="#/photos/{{main.userId}}/{{photoIndex + 1}}" ng-disabled="photoIndex >= main.length - 1"> Next Photo </md-button>
+				</div>
+				<p class="inset">Created at {{photo.date_time}} </p>
+				<p class="inset">Comments:</p>
+				<p class="inset" ng-if="photo.comments.length === 0">None</p>
+				<md-list>
+					<md-list-item class="md-2-line" ng-repeat="comment in photo.comments">
+						<div class="md-list-item-text" layout="column">
+							<p><b><i>{{comment.comment}}</i></b></p>
+							<br>
+			    			<p>&nbsp;&nbsp;&nbsp;&nbsp;Commented by 
+			    				<a ng-href="#/users/{{comment.user.id}}">{{comment.user.first_name + " " + comment.user.last_name}}</a>
+			    				at {{comment.date_time}}
+			    			</p>
+			    			<br>
+			    			<br>
+		    			</div>
+					</md-list-item>
+				</md-list>
+			</md-card-content>
+		</md-card>
+	</md-list-item>
+</md-list>

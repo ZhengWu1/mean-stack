@@ -1,0 +1,16 @@
+<md-list layout="column">
+	<md-list-item class="inset" layout="column" ng-repeat="comment in comments">
+		<md-card class="photos-card">
+			<md-card-content>
+				<div class="user-comments-thumbnail">
+  					<a href="#/photos/{{comment.photo_user_id}}/{{comment.photo_index}}">
+  						<img class="user-comments-thumbnail" ng-src="{{computePhotoSrc(comment.photo_file_name)}}"> </img>
+  					</a>
+				</div>
+				<p class="inset">Comment:</p>
+				<p><b><i><a href="#/photos/{{comment.photo_user_id}}/{{comment.photo_index}}">{{comment.comment}}</a></i></b></p>
+				</p>
+			</md-card-content>
+		</md-card>
+	</md-list-item>
+</md-list>

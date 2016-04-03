@@ -1,0 +1,28 @@
+body {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.dimmed {
+	color: grey;
+}
+
+#div1, #div2 {
+	width: 154px;
+	margin: 20px auto;
+	position: relative;
+}
+
+#prev {
+	position: absolute;
+	left: 0;
+}
+
+#next {
+	position: absolute;
+	right: 0;
+}
+
+.wrap span {
+	margin: auto 5px;
+}

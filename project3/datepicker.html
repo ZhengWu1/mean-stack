@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>CS 142 Project 3, Problem 1</title>
+		<link rel="stylesheet" type="text/css" href="datepicker.css" />
+	</head>
+	<body>
+		<div id="div1"> </div>
+		<div id="div2"> </div>
+	</body>
+	<script type="text/javascript" src="DatePicker.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+		var datePicker1 = new DatePicker("div1", function (id, fixedDate) {
+   			console.log("DatePicker with id", id,
+       		"selected date:", fixedDate.month + "/" + fixedDate.day + "/" + fixedDate.year);
+		});
+		datePicker1.render(new Date());
+		var datePicker2 = new DatePicker("div2", function (id, fixedDate) {
+   			console.log("DatePicker with id", id,
+       		"selected date:", fixedDate.month + "/" + fixedDate.day + "/" + fixedDate.year);
+		});
+		datePicker2.render(new Date("January 4, 2009"));
+	//]]>
+	</script>
+</html>

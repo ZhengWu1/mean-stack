@@ -1,0 +1,63 @@
+li {
+	display: inline;
+}
+
+ul {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+	font-family: Tahoma;
+}
+
+.active {
+	font-weight: bold;
+}
+
+a:hover {
+	color: #cc6600;
+	cursor: pointer;
+}
+
+.left {
+	background-image: url('left.gif');
+	padding: 3px 2px 3px 1px;
+	margin-left: 5px;
+}
+
+.middle {
+	background-image: url('mid.gif');
+	background-repeat: repeat-x;
+	padding: 3px 6px 3px 5px;
+	margin-right: -4px;
+}
+
+.right {
+	background-image: url('right.gif');
+	padding: 3px 0px 3px 3px;
+	margin-right: 0px;
+}
+
+.active .left {
+	background-image: url('left-selected.gif');
+}
+
+.active .middle {
+	background-image: url('mid-selected.gif');
+	padding: 3px 5px 3px 5px;
+}
+
+.active .right {
+	background-image: url('right-selected.gif');
+}
+
+.active span {
+	border-bottom: 1px solid white;
+}

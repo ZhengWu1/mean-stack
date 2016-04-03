@@ -1,0 +1,32 @@
+<div class="inset">
+	<form>
+		Login Name: <input type="text" ng-model="main.login_name" ng-change="main.login_failed = false">
+		Password: <input type="password" ng-model="main.password" ng-change="main.login_failed = false">
+		<br>
+		<div class="login_register_message" ng-if="main.login_failed">Combination of Login Name and Password incorrect. Please try again.</div>
+		<button ng-click="login()">Login</button>
+	</form>
+	<br>
+	<br>
+	<form>
+		Login Name: <input type="text" ng-model="main.new_login_name">
+		<br>
+		Password: <input type="password" ng-model="main.password1">
+		<br>
+		Please Enter Password Again: <input type="password" ng-model="main.password2">
+		<br>
+		First Name: <input type="text" ng-model="main.first_name">
+		<br>
+		Last Name: <input type="text" ng-model="main.last_name">
+		<br>
+		Location: <input type="text" ng-model="main.location">
+		<br>
+		Description: <input type="text" ng-model="main.description">
+		<br>
+		Occupation: <input type="text" ng-model="main.occupation">
+		<br>
+		<div class="login_register_message">{{main.register_message}}</div>
+		<button ng-click="register()">Register Me</button>
+	</form>
+
+</div>

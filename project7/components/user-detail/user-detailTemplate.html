@@ -1,0 +1,8 @@
+<div class="inset">
+	<h3>Name: {{main.user.first_name + " " + main.user.last_name}}</h3>
+ 	<h4>Location: {{main.user.location}}</h4>
+ 	<h4>Occupation: {{main.user.occupation}}</h4>
+  	<p>Description: {{main.user.description}}</p>
+  	<a ng-if="!main.advanced" ng-href="#/photos/{{main.user.id}}">Photos</a>
+  	<a ng-if="main.advanced" ng-href="#/photos/{{main.user.id}}/0">Photos</a>
+</div>

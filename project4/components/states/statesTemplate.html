@@ -1,0 +1,17 @@
+<!--Replaced this with the Angular template for states component of CS142 Project #4
+    Problem #2.-->
+<label class="cs142-example-output">Filter States by: 
+        <!-- <input type="text" ng-model="subString"> -->
+        <input type="text" ng-model="subString" ng-change="filter()">
+</label>
+
+<div>Filtered States by the subString: {{subString}}</div>
+
+<div ng-show="filteredStates.length === 0"> There is no states containing this substring. </div>
+
+<div>
+	<ul>
+		<!-- <li ng-repeat="state in filteredStates = (allStates | filter: subString | orderBy: state)">{{state}}</li> -->
+		<li ng-repeat="state in filteredStates">{{state}}</li>
+	</ul>
+</div>
